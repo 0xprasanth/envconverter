@@ -1,0 +1,8 @@
+{
+    "name": "env-parser-cli",
+    "version": "1.0.0",
+    "description": "Parse .env file to CSV",
+    "bin": {
+      "envparser": "./bin/env-parser.js"
+    }
+  }
