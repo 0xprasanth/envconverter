@@ -17,7 +17,7 @@ A CLI tool to convert `.env` files into formats that can be easily pasted into G
 Run directly using npx:
 
 ```bash
-npx envparser <input-file> [output-file] [options]
+npx envconverter <input-file> [output-file] [options]
 ```
 
 ## Options
@@ -32,28 +32,28 @@ npx envparser <input-file> [output-file] [options]
 
 Print CSV to console:
 ```
-npx envparser .env
+npx envconverter .env
 ```
 
 ## Save CSV to file:
 ```
-npx envparser .env output.csv
+npx envconverter .env output.csv
 ```
 
 ## Generate TSV for Google Sheets:
 ```
-npx envparser .env --format tsv
+npx envconverter .env --format tsv
 ```
 
 ## Generate JSON:
 ```
-npx envparser .env config.json --format json
+npx envconverter .env config.json --format json
 ```
 
 ## Generate Markdown table:
 
 ```
-npx envparser .env --format md
+npx envconverter .env --format md
 ```
 
 ## Example Input
@@ -77,5 +77,5 @@ JWT_SECRET,supersecret
 
 Use TSV format for direct paste without column splitting:
 ```
-npx envparser .env --format tsv
+npx envconverter .env --format tsv
 ```
